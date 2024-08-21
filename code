@@ -13,7 +13,7 @@ def verificar_diccionarios(diccionario1, diccionario2):
 
 # 3. Mezclar dos diccionarios
 def mezclar_diccionarios(diccionario1, diccionario2):
-    resultado = diccionario1.copy()  # Copiamos el primer diccionario
+    resultado = diccionario1.copy()  
     for clave, valor in diccionario2.items():
         if clave not in resultado:
             resultado[clave] = valor
