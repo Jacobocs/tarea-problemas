@@ -1,0 +1,26 @@
+# 1. Imprimir los valores de un diccionario de manera ascendente
+def imprimir_valores_ascendentes(diccionario):
+    valores_ordenados = sorted(diccionario.values())
+    for valor in valores_ordenados:
+        print(valor)
+
+# 2. Verificar si todas las claves y valores de un diccionario están en otro diccionario
+def verificar_diccionarios(diccionario1, diccionario2):
+    for clave, valor in diccionario1.items():
+        if clave not in diccionario2 or diccionario2[clave] != valor:
+            return False
+    return True
+
+# 3. Mezclar dos diccionarios
+def mezclar_diccionarios(diccionario1, diccionario2):
+    resultado = diccionario1.copy()  # Copiamos el primer diccionario
+    for clave, valor in diccionario2.items():
+        if clave not in resultado:
+            resultado[clave] = valor
+    return resultado
+
+# 4. Imprimir nombres y apellidos de personas en un rango de edades
+def filtrar_personas_por_edad(lista_personas, edad_min, edad_max):
+    for persona in lista_personas:
+        if edad_min <= persona["edad"] <= edad_max:
+            print(f'{persona["nombres"]} {persona["apellidos"]}')
