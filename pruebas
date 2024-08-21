@@ -1,0 +1,22 @@
+# 1:
+mi_diccionario = {"a": 3, "b": 1, "c": 2}
+imprimir_valores_ascendentes(mi_diccionario)
+
+# 2:
+diccionario1 = {"a": 1, "b": 2}
+diccionario2 = {"a": 1, "b": 2, "c": 3}
+print(verificar_diccionarios(diccionario1, diccionario2))
+
+# 3:
+diccionario1 = {"a": 1, "b": 2}
+diccionario2 = {"b": 3, "c": 4}
+nuevo_diccionario = mezclar_diccionarios(diccionario1, diccionario2)
+print(nuevo_diccionario) 
+
+# 4:
+personas = [
+    {"nombres": "Pedro julio", "apellidos": "Tristán merchan", "edad": 101},
+    {"nombres": "Ana María", "apellidos": "López Pérez", "edad": 30},
+    {"nombres": "Juan Carlos", "apellidos": "García Martínez", "edad": 45}
+]
+filtrar_personas_por_edad(personas, 30, 50)
